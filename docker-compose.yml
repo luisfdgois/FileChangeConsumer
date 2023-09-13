@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+
+  mysql-db:
+    container_name: mysql-db
+    image: mysql/mysql-server:latest
+    ports: 
+      - "3306:3306"
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_SERVER: mysql-db
+      MYSQL_DATABASE: DbFileChange
+      MYSQL_USER: root
+      MYSQL_PASSWORD: userpass
+
+  worker-filechange:
+    container_name: filechange-container
+    image: filechange-image
+    build: 
+      context: .
+      dockerfile: FileChangeConsumer/Dockerfile
+    depends_on:
+      - mysql-db
+    environment:
+      DBServer: mysql-db
+      DataBase: DbFileChange
+      DBUser: root
+      DBPassword: userpass
