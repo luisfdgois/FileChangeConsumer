@@ -8,7 +8,7 @@ O serviço lerá cada mensagem na fila e verificará a existência de um arquivo
 
 1. A fila deverá estar previamente criada e com as permissões de usuário IAM já configuradas;
 2. Adicione as credenciais (AccessKey e SecretKey) do usuário IAM, bem como o nome da região onde a fila SQS está localizada e o seu nome, ao arquivo appsettings.json;;
-3. No diretório da solution .sln, onde está o arquivo docker-compose.yml, execute seguinte comando:
+3. No diretório da solution .sln, onde está o arquivo docker-compose.yml, execute o seguinte comando:
 ```bash
 docker-compose up -d
 
