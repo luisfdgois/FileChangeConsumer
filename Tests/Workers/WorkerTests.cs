@@ -34,7 +34,7 @@ namespace Tests.Workers
         }
 
         [Fact]
-        public async Task WhenMessageBodyIsNotValid_SouldLogError()
+        public async Task WhenMessageBodyIsNotValid_ShouldLogError()
         {
             var cancellationToken = new CancellationTokenSource();
 
@@ -56,7 +56,7 @@ namespace Tests.Workers
         }
 
         [Fact]
-        public async Task WhenMessageBodyIsValid_SouldHandleNotification()
+        public async Task WhenMessageBodyIsValid_ShouldHandleNotification()
         {
             var cancellationToken = new CancellationTokenSource();
 
@@ -79,7 +79,7 @@ namespace Tests.Workers
         }
 
         [Fact]
-        public async Task WhenMessageIsProcessed_SouldDeleteItFromQueue()
+        public async Task WhenMessageIsProcessed_ShouldDeleteItFromQueue()
         {
             var cancellationToken = new CancellationTokenSource();
 
