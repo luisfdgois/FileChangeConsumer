@@ -3,7 +3,7 @@ using Amazon.SQS.Model;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using NSubstitute.Core;
-using Tests.Shared.Mocks.Logs;
+using Tests.Shared.Mocks.Loggers;
 
 namespace Tests.Shared.Mocks.SQS
 {

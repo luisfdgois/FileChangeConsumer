@@ -2,7 +2,7 @@
 using FluentAssertions;
 using Tests.Shared.Builders.Entities;
 using Tests.Shared.Builders.Messages;
-using Tests.Shared.Mocks.Logs;
+using Tests.Shared.Mocks.Loggers;
 using Tests.Shared.Mocks.Repositories;
 
 namespace Tests.App.Handlers

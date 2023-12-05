@@ -5,7 +5,7 @@ using Tests.Shared.Builders.Messages;
 using Tests.Shared.Builders.SQS;
 using Tests.Shared.Mocks;
 using Tests.Shared.Mocks.Handlers;
-using Tests.Shared.Mocks.Logs;
+using Tests.Shared.Mocks.Loggers;
 using Tests.Shared.Mocks.Services;
 using Tests.Shared.Mocks.SQS;
 
